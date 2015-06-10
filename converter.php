@@ -33,8 +33,8 @@ if (php_sapi_name() == "cli" || php_sapi_name() == "embed")
 
 } else
 {
-    $input = isset($_GET["input"]) ? trim($_GET["input"]) : "";
-    $output = isset($_GET["output"]) ? trim($_GET["output"]) : "";
+    $input = isset($_GET["input"]) ? trim($_GET["input"]) : "English-Vietnamese.ld2";
+    $output = isset($_GET["output"]) ? trim($_GET["output"]) : "English-Vietnamese.txt";
     $encodingWord = isset($_GET["encodingWord"]) ? trim($_GET["encodingWord"]) : "UTF-8";
     $encodingDef = isset($_GET["encodingDef"]) ? trim($_GET["encodingDef"]) : "UTF-16LE";
 }
